@@ -7,6 +7,12 @@ public class Event {
 
     public Event() {}
 
+    public Event(String title, String description, String location) {
+        this.title = title;
+        this.description = description;
+        this.location = location;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -31,4 +37,3 @@ public class Event {
         this.location = location;
     }
 }
-
