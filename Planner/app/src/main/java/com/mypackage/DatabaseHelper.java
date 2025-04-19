@@ -65,5 +65,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return events;
     }
-}
 
+    public void deleteAllEvents() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_EVENTS, null, null);
+        db.close();
+    }
+}
